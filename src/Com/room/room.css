@@ -1,0 +1,65 @@
+.room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: #fff 0px 0.0625em 0.0625em, #fff 0px 0.125em 0.5em, #fff 0px 0px 0px 1px inset;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #1F2937;
+    border-radius: 8px;
+  }
+  
+  .card label {
+    
+    font-size: 22px;
+    font-weight: bold;
+    color:#EC4899;
+    margin-top: 10px;
+
+  }
+  
+  .card input {
+    padding: 10px;
+    width: 55%;
+    margin-top: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  
+  
+  
+  .card button {
+    padding: 10px 20px;
+    background-color:  #0047ab;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    
+  }
+
+  .card button:hover {
+    background-color:  #8B5Cf6;
+  }
+   
+  
+  .card button:active {
+    background-color: #8B5Cf6;
+  }
+  
+  .card button:focus {
+    outline: none;
+  }
+  

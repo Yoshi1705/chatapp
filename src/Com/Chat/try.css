@@ -1,0 +1,117 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+.chat-container {
+  background-color: #1F2937;
+  border-radius: 8px;
+  box-shadow: #fff 0px 0.0625em 0.0625em, #fff 0px 0.125em 0.5em, #fff 0px 0px 0px 1px inset;
+  padding: 15px;
+  height: 400px;
+   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+  overflow-y: auto;
+  width:100%;
+}
+
+.message {
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.message.send {
+  background-color: #4CAF50;
+  align-self: flex-end;
+  color: white;
+}
+
+.message.receive {
+  background-color: #fff;
+  align-self: flex-start;
+}
+
+ 
+.chat-input-container {
+  align-self: flex-end;
+  margin-top: auto;
+  width:100%;
+}
+ 
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chat-input input {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  text-decoration: none;
+  width: 80%;
+  outline: none;
+}
+
+.chat-input button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.chat-input button:hover {
+  background-color: #3c8bad;
+}
+ 
+
+.input-alert {
+  padding-right: 30px; /* Adjust the padding as needed to accommodate the icon */
+  background-image: url('download.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 30px;
+}
+
+.alert {
+  color: red;
+  display: flex;
+  justify-content: flex-start;
+  width:100%;
+
+}
+
+.alert p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  .chat-container {
+    max-width: 80%; /* Adjust as needed */
+    margin: 0 auto; /* Center align the chat container */
+     
+    padding: 15px;
+    margin-left: 36px;
+  }
+
+  .chat-input-container {
+    margin-top: 180px; /* Adjust as needed */
+  }
+}
+
